@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Light Slider -->
+    <link type="text/css" rel="stylesheet" href="./node_modules/lightslider/dist/css/lightslider.css" />                  
+    <script src="./node_modules/lightslider/dist/js/lightslider.js"></script>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="d-flex flex-column">
+                    <div>
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                </div>
+
+
+            </div>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="/assets/Robeez_Spring_BreakShop_Desktop2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="/assets/why-robeez-new.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container">
+            <div>
+                <h3>Best Seller</h3>
+                <ul id="lightSlider" class="lightSlider">
+                    <li>
+                        <h3>First Slide</h3>
+                        <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
+                    </li>
+                    <li>
+                        <h3>Second Slide</h3>
+                        <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                    </li>
+                    <li>
+                        <h3>First Slide</h3>
+                        <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
+                    </li>
+                    <li>
+                        <h3>Second Slide</h3>
+                        <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                    </li>
+                    <li>
+                        <h3>Second Slide</h3>
+                        <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                    </li>
+                    <li>
+                        <h3>Second Slide</h3>
+                        <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                    </li>
+                  </ul>
+            </div>
+
+            <div>
+                <h3>Support For Your Baby Every Step of the Way</h3>
+                <p>
+                    Robeez makes their shoes with love and support for your baby at every age. Whether they’re crawling, walking, or running, Robeez toddler walking shoes promote your baby’s growth and development in a natural manner. Join the families who have left loose, unsupportive toddler shoes in the past and see what the hype is about with Robeez baby shoes.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $("#lightSlider").lightSlider({
+        item: 5,
+        slideMove: 1,
+        loop:false,
+      }); 
+    });
+  </script>
+</html>
